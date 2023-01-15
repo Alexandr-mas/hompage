@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+    color: black;
+}
 .content {
 	margin: auto;
 	border: 20px solid black;
@@ -5,7 +9,11 @@
 	display: flex;
 	flex-direction: row-reverse;
 }
-
+.font-chapter{
+    font-weight: 400;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+}
 .resumeInfo {
 	display: flex;
 	flex-direction: column;
@@ -109,6 +117,7 @@
 
 .resume {
 	text-align: center;
+    font-family: 'Comfortaa', cursive;
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 27px;
@@ -132,6 +141,7 @@ img {
 }
 
 .contacts {
+    font-family: 'Comfortaa', cursive;
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 27px;
@@ -140,6 +150,7 @@ img {
 
 .contact-type {
 	padding-right: 10px;
+    font-family: 'Comfortaa', cursive;
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 30px;
@@ -147,6 +158,7 @@ img {
 }
 
 .contact-info {
+    font-family: 'Comfortaa', cursive;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -157,6 +169,7 @@ img {
 }
 
 .contact-info2 {
+    font-family: 'Comfortaa', cursive;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -166,12 +179,44 @@ img {
 	text-decoration: none;
 
 }
-
+.emoji {
+    position: relative;
+  }
+.emoji::after {
+    /* content: &#128170; */
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+.emoji:hover::after {
+    opacity: 1;
+  }
+.emoji-html::after{
+    content: "💪🔌💡";
+}
+.emoji-js::after{
+    content: "💪🕶📲↗";
+}
+.emoji-react::after{
+    content: "💘👍↗";
+}
+.emoji-css::after{
+    content: "🔃👌";
+}
+.emoji-web::after{
+    content: "💪🕶👍↗↗";
+}
+.emoji-git::after{
+    content: "➡💻";
+}
 .Techskil {
 	padding: 47px 0 44px 0;
 }
 
 .skills {
+    font-family: 'Comfortaa', cursive;
 	padding-top: 8px;
 	margin: 0;
 	font-size: 22px;
@@ -187,6 +232,7 @@ ul {
 }
 
 .myskill li {
+    font-family: 'Comfortaa', cursive;
 	padding-bottom: 5px;
 	color: #FB6D3A;
 	font-size: 14px;
@@ -199,9 +245,9 @@ ul {
 	color: white;
 }
 
-@media(max-width: 1250px) {
+@media(max-width: 1330px) {
     .content {
-        width: 100%;
+        width: 90%;
     }
     .aside {
         min-width: 270px;
@@ -213,12 +259,33 @@ ul {
         justify-content: space-between; */
     }
 }
-@media(max-width: 505px){
+@media(max-width: 560px){
     .content {
         border: none;
         flex-wrap: wrap;
     }
     .aside {
         width: 100vh;
+    }
+    .font-chapter{
+        font-size: 20px;
+    }
+    .line {
+        font-size: 13px;
+    }
+    .resume {
+        font-size: 30px;
+    }
+    .contacts {
+        font-size: 14px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 13px;
     }
 }
