@@ -193,23 +193,23 @@ img {
 .emoji:hover::after {
     opacity: 1;
   }
-.emoji-html::after{
-    content: "💪🔌💡";
+  .emoji-html::after{
+    content: "\1F4AA \1F50C \1F4A1";
 }
 .emoji-js::after{
-    content: "💪🕶📲↗";
+    content: "\1F4AA \1F576 \1F4F1 \21E7";
 }
 .emoji-react::after{
-    content: "💘👍↗";
+    content: "\1F495 \1F44D \21E7";
 }
 .emoji-css::after{
-    content: "🔃👌";
+    content: "\21C4 \1F44F";
 }
 .emoji-web::after{
-    content: "💪🕶👍↗↗";
+    content: "\1F4AA \1F576 \1F44D \21E7 \21E7";
 }
 .emoji-git::after{
-    content: "➡💻";
+    content: "\27A1 \1F4BB";
 }
 .Techskil {
 	padding: 47px 0 44px 0;
