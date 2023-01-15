@@ -65,6 +65,7 @@
 .line {
 	margin: 20px;
 	padding: 10px;
+    font-size: 20px;
 }
 
 .line::after {
@@ -196,4 +197,28 @@ ul {
 
 .myskill span {
 	color: white;
+}
+
+@media(max-width: 1250px) {
+    .content {
+        width: 100%;
+    }
+    .aside {
+        min-width: 270px;
+    }
+    .timeline {
+        /* display: flex; */
+        flex-wrap: wrap;
+        /* align-items: flex-start;
+        justify-content: space-between; */
+    }
+}
+@media(max-width: 505px){
+    .content {
+        border: none;
+        flex-wrap: wrap;
+    }
+    .aside {
+        width: 100vh;
+    }
 }
