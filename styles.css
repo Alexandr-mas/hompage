@@ -1,3 +1,122 @@
+.content {
+	margin: auto;
+	border: 20px solid black;
+	width: 1250px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.resumeInfo {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(90deg, #FFD900, #0046AD);
+	background-size: 200% 200%;
+	animation: animate-bg 10s linear infinite;
+	padding: 15px;
+}
+
+@keyframes animate-bg {
+	0% {
+		background-position: 0% 0%;
+	}
+
+	25% {
+		background-position: 100% 0%;
+	}
+
+	50% {
+		background-position: 100% 100%;
+	}
+
+	75% {
+		background-position: 0% 100%;
+	}
+
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+#text {
+	color: black;
+	transition: color 2s;
+}
+
+#background:hover #text {
+	color: white;
+}
+
+.timeline {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.timeline-item {
+	width: 115px;
+	height: 100px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.line {
+	margin: 20px;
+	padding: 10px;
+}
+
+.line::after {
+	content: "";
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+}
+
+.inspiration {
+	background-color: #F9A826;
+
+}
+
+.education {
+	background-color: #44BBA4;
+
+}
+
+.it-courses {
+	background-color: #4ECDC4;
+
+}
+
+.independent-study {
+	background-color: #F9D423;
+
+}
+
+.hobbies {
+	background-color: #A8D8EA;
+
+}
+
+.dislike {
+	background-color: #FF6B6B;
+
+}
+
+.resume {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 27px;
+	letter-spacing: 0em;
+}
+
+.about {
+	padding-left: 40px;
+}
 .aside {
 	min-width: 370px;
 	border-radius: 0px;
